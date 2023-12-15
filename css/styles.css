@@ -41,6 +41,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Common Styles */
 .container {
   width: 1158px;
@@ -56,7 +57,7 @@ img {
   letter-spacing: 0.02em;
 }
 .grid-name {
-  padding: 32px 0;
+  padding-top: 32px;
 }
 .op-name {
   padding: 32px 16px;
@@ -71,6 +72,7 @@ img {
 }
 .list-text {
   display: flex;
+  margin-bottom: 8px;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -169,6 +171,14 @@ body {
 .hero-section {
   padding: 188px 0;
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   display: block;
@@ -204,7 +214,7 @@ body {
   background-color: #404bbf;
 }
 
-/* Section Advantages */
+/* Section Benefits */
 .text-list {
   display: flex;
   gap: 24px;
@@ -212,6 +222,21 @@ body {
 }
 .title {
   margin-bottom: 8px;
+}
+.benefits-icon-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+  width: 264px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid#8e8f99;
+  background-color: #f4f4fd;
+}
+.benefits-icon {
+  margin: 24px 0;
+  justify-content: center;
+  text-align: center;
 }
 .list-item {
   display: flex;
@@ -226,7 +251,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Section Our Team*/
+/* Our Team */
 .our-team {
   background-color: #f4f4fd;
 }
@@ -249,8 +274,41 @@ body {
   width: 264px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-/* Section Our Portfolio */
+.social-icon-wrapper,
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 264px;
+}
+.elements {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.circle:hover,
+.circle:focus {
+  background-color: #404bbf;
+}
+.social-icon {
+  fill: currentColor;
+}
+/* Portfolio */
 .op-title {
   margin-bottom: 72px;
   color: #2e2f42;
@@ -268,9 +326,13 @@ body {
   row-gap: 48px;
   background-color: #ffffff;
 }
-
 .op-img {
   width: 360px;
+}
+.op-img:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* Footer */
@@ -278,7 +340,7 @@ body {
   background-color: #2e2f42;
 }
 .f-logo {
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 16px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -290,7 +352,7 @@ body {
   text-decoration: none;
 }
 .logo-light {
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 16px;
   color: #f4f4fd;
   font-family: "Raleway", sans-serif;
@@ -301,8 +363,24 @@ body {
   text-transform: uppercase;
 }
 .f-text {
+  display: flex;
+  margin-right: 120px;
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-wrapper {
+  display: flex;
+}
+.f-title {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer .circle:hover,
+.footer .circle:focus {
+  background-color: #31d0aa;
 }
