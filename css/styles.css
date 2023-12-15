@@ -414,15 +414,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-wrapper {
-  display: flex;
-}
 .f-title {
-  display: flex;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
+}
+.f-logo-wrapper {
+  margin-right: 120px;
+}
+.f-social-icon-wrapper .social-icon-list {
+  display: flex;
+  gap: 16px;
+}
+.f-social-icon-wrapper {
+  display: flex;
+  align-items: baseline;
 }
 .footer .circle:hover,
 .footer .circle:focus {
