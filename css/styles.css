@@ -313,7 +313,6 @@ body {
 .elements {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .circle {
   display: flex;
@@ -324,6 +323,7 @@ body {
   color: #f4f4fd;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .circle:hover,
 .circle:focus {
