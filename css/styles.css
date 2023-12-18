@@ -67,6 +67,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list-text {
   display: flex;
@@ -74,6 +76,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -411,6 +415,7 @@ body {
   text-transform: uppercase;
 }
 .f-text {
+  margin-top: 16px;
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
@@ -425,7 +430,6 @@ body {
   margin-bottom: 16px;
 }
 .f-logo-wrapper {
-  display: flex;
   margin-right: 120px;
 }
 .f-social-icon-wrapper > .social-icon-list {
